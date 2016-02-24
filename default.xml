@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <remote fetch="git://git.openembedded.org" name="oe" sync-j="4"/>
+    <remote fetch="http://code.ossystems.com.br" name="ossystems" sync-j="4" review="code.ossystems.com.br"/>
+    <remote fetch="https://github.com/MarvellEmbeddedProcessors" name="marvell" sync-j="4"/>
+    <remote fetch="ssh://git@github.com/MarvellEmbeddedProcessors" name="marvell-prv" sync-j="4"/>
+
+    <default revision="invalidRevision"/>
+
+    <project remote="oe" revision="jethro" name="openembedded-core" path="sources/openembedded-core" />
+    <project remote="oe" revision="1.28" name="bitbake" path="sources/bitbake"/>
+
+    <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded" />
+
+    <project remote="ossystems" revision="jethro" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
+    <project remote="ossystems" revision="jethro" name="ossystems-yocto-base-scripts" path="sources/base" >
+        <copyfile dest="setup-environment" src="setup-environment"/>
+    </project>
+
+    <project remote="marvell-prv" revision="jethro" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
+    <project remote="marvell-prv" revision="jethro" name="meta-marvell" path="sources/meta-marvell"/>
+    <project remote="marvell-prv" revision="jethro" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
+
+    <project remote="marvell-prv" revision="jethro" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+</manifest>
