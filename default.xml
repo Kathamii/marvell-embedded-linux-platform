@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-    <remote fetch="git://git.openembedded.org" name="oe" sync-j="4"/>
+    <remote fetch="https://github.com/openembedded" name="oe" sync-j="4"/>
     <remote fetch="http://code.ossystems.com.br" name="ossystems" sync-j="4" review="code.ossystems.com.br"/>
     <remote fetch="https://github.com/MarvellEmbeddedProcessors" name="marvell" sync-j="4"/>
     <remote fetch="ssh://git@github.com/MarvellEmbeddedProcessors" name="marvell-prv" sync-j="4"/>
