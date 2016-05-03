@@ -2,5 +2,5 @@
 <manifest>
     <include name="default.xml"/>
 
-    <project remote="marvell-prv" revision="jethro" name="meta-marvell-prv" path="sources/meta-marvell-prv"/>
+    <project remote="marvell-prv" revision="krogoth" name="meta-marvell-prv" path="sources/meta-marvell-prv"/>
 </manifest>

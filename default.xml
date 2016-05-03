@@ -8,19 +8,19 @@
 
     <default revision="invalidRevision"/>
 
-    <project remote="oe" revision="jethro" name="openembedded-core" path="sources/openembedded-core" />
-    <project remote="oe" revision="1.28" name="bitbake" path="sources/bitbake"/>
+    <project remote="oe" revision="krogoth" name="openembedded-core" path="sources/openembedded-core" />
+    <project remote="oe" revision="1.30" name="bitbake" path="sources/bitbake"/>
 
-    <project remote="oe" revision="jethro" name="meta-openembedded" path="sources/meta-openembedded" />
+    <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded" />
 
-    <project remote="ossystems" revision="jethro" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
-    <project remote="ossystems" revision="jethro" name="ossystems-yocto-base-scripts" path="sources/base" >
+    <project remote="ossystems" revision="krogoth" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
+    <project remote="ossystems" revision="krogoth" name="ossystems-yocto-base-scripts" path="sources/base" >
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
 
-    <project remote="marvell-prv" revision="jethro" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
-    <project remote="marvell-prv" revision="jethro" name="meta-marvell" path="sources/meta-marvell"/>
-    <project remote="marvell-prv" revision="jethro" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
+    <project remote="marvell-prv" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
+    <project remote="marvell-prv" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
+    <project remote="marvell-prv" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
 
-    <project remote="marvell-prv" revision="jethro" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+    <project remote="marvell-prv" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
 </manifest>
