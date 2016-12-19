@@ -20,9 +20,9 @@
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
 
-    <project remote="marvell-prv" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
-    <project remote="marvell-prv" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
-    <project remote="marvell-prv" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
+    <project remote="marvell" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
+    <project remote="marvell" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
+    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
 
-    <project remote="marvell-prv" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
 </manifest>
