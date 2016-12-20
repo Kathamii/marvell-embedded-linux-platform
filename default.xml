@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-    <remote fetch="https://github.com/openembedded" name="oe" sync-j="4"/>
-    <remote fetch="http://code.ossystems.com.br" name="ossystems" sync-j="4" review="code.ossystems.com.br"/>
-    <remote fetch="https://github.com/MarvellEmbeddedProcessors" name="marvell" sync-j="4"/>
-    <remote fetch="ssh://git@github.com/MarvellEmbeddedProcessors" name="marvell-prv" sync-j="4"/>
-    <remote fetch="git://git.yoctoproject.org" name="yocto" sync-j="4" />
-
-    <default revision="invalidRevision"/>
-
-    <project remote="oe" revision="krogoth" name="openembedded-core" path="sources/openembedded-core" />
-    <project remote="oe" revision="1.30" name="bitbake" path="sources/bitbake"/>
-
-    <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded" />
-    <project remote="yocto" revision="krogoth" name="meta-virtualization" path="sources/meta-virtualization" />
-
-    <project remote="ossystems" revision="krogoth" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
-    <project remote="ossystems" revision="krogoth" name="ossystems-yocto-base-scripts" path="sources/base" >
-        <copyfile dest="setup-environment" src="setup-environment"/>
-    </project>
-
-    <project remote="marvell" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
-    <project remote="marvell" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
-
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+  <remote fetch="https://github.com/MarvellEmbeddedProcessors" name="marvell"/>
+  <remote fetch="ssh://git@github.com/MarvellEmbeddedProcessors" name="marvell-prv"/>
+  <remote fetch="https://github.com/openembedded" name="oe"/>
+  <remote fetch="http://code.ossystems.com.br" name="ossystems" review="code.ossystems.com.br"/>
+  <remote fetch="git://git.yoctoproject.org" name="yocto"/>
+  
+  <default revision="invalidRevision"/>
+  
+  <project name="bitbake" path="sources/bitbake" remote="oe" revision="449dc9b955dfbe048e380f5ab9fd61c3d1489dad" upstream="1.30"/>
+  <project name="marvell-embedded-linux-config" path="sources/conf/tools" remote="marvell" revision="4f9a5da6b2983d3adf29c848b0e9a8b3eb311f9c" upstream="krogoth"/>
+  <project name="marvell-embedded-linux-platform" path="sources/conf/repo" remote="marvell" revision="7c22d7cacfef78c1d3867d79ca5f558117eb8e32" upstream="krogoth"/>
+  <project name="meta-marvell" path="sources/meta-marvell" remote="marvell" revision="aba206bdc545838f4f0a9df5eedc7cc6e0ddcbc1" upstream="krogoth"/>
+  <project name="meta-marvell-distro" path="sources/meta-marvell-distro" remote="marvell" revision="57d088f7e2c58cbb1162b27f8950fed0dbfb178d" upstream="krogoth"/>
+  <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="55c8a76da5dc099a7bc3838495c672140cedb78e" upstream="krogoth"/>
+  <project name="meta-ossystems-base" path="sources/meta-ossystems-base" remote="ossystems" revision="4a6d60c94b16b8ea75ecf7d16af7a7071d6edb5c" upstream="krogoth"/>
+  <project name="meta-virtualization" path="sources/meta-virtualization" remote="yocto" revision="c4a1711dd31659b027c70c07e4ef6da98591ac95" upstream="krogoth"/>
+  <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="28da89a20b70f2bf0c85da6e8af5d94a3b7d76c9" upstream="krogoth"/>
+  <project name="ossystems-yocto-base-scripts" path="sources/base" remote="ossystems" revision="44bef26947245468028d79f45448a6a092ecbc54" upstream="krogoth">
+    <copyfile dest="setup-environment" src="setup-environment"/>
+  </project>
 </manifest>
