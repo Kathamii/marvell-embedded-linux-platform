@@ -1,8 +1,16 @@
 # marvell-embedded-linux-platform
-marvell-embedded-linux-platform
-repo init -u git@github.com:MarvellEmbeddedProcessors/marvell-embedded-linux-platform.git -b krogoth -m private
-repo sync
 
-## meta-marvell-cdal usage
-repo init -u git@github.com:MarvellEmbeddedProcessors/marvell-embedded-linux-platform.git -b krogoth -m cdal
+## Development release:
+
+```shell
+repo init -u https://github.com/MarvellEmbeddedProcessors/marvell-embedded-linux-platform.git -b krogoth
 repo sync
+```
+
+## Stable releases:
+### To find out all available releases check this [page](https://github.com/MarvellEmbeddedProcessors/marvell-embedded-linux-platform/releases).
+
+```shell
+repo init -u https://github.com/MarvellEmbeddedProcessors/marvell-embedded-linux-platform.git -b refs/tags/<release>
+repo sync
+```
