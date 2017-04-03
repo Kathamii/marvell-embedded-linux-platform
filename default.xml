@@ -9,20 +9,20 @@
 
     <default revision="invalidRevision"/>
 
-    <project remote="oe" revision="krogoth" name="openembedded-core" path="sources/openembedded-core" />
-    <project remote="oe" revision="1.30" name="bitbake" path="sources/bitbake"/>
+    <project remote="oe" revision="morty" name="openembedded-core" path="sources/openembedded-core" />
+    <project remote="oe" revision="1.32" name="bitbake" path="sources/bitbake"/>
 
-    <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded" />
-    <project remote="yocto" revision="krogoth" name="meta-virtualization" path="sources/meta-virtualization" />
+    <project remote="oe" revision="morty" name="meta-openembedded" path="sources/meta-openembedded" />
+    <project remote="yocto" revision="morty" name="meta-virtualization" path="sources/meta-virtualization" />
 
-    <project remote="ossystems" revision="krogoth" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
-    <project remote="ossystems" revision="krogoth" name="ossystems-yocto-base-scripts" path="sources/base" >
+    <project remote="ossystems" revision="morty" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
+    <project remote="ossystems" revision="morty" name="ossystems-yocto-base-scripts" path="sources/base" >
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
 
-    <project remote="marvell" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
-    <project remote="marvell" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
+    <project remote="marvell" revision="master" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
+    <project remote="marvell" revision="master" name="meta-marvell" path="sources/meta-marvell"/>
+    <project remote="marvell" revision="master" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
 
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+    <project remote="marvell" revision="master" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
 </manifest>
