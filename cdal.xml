@@ -2,5 +2,5 @@
 <manifest>
     <include name="private.xml"/>
 
-    <project remote="marvell-prv" revision="master" name="meta-marvell-cdal" path="sources/meta-marvell-cdal"/>
+    <project remote="marvell-prv" revision="4fe7bff878ff743a9b15d00ec806c25be7e78214" name="meta-marvell-cdal" path="sources/meta-marvell-cdal"/>
 </manifest>

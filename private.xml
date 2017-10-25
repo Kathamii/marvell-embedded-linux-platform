@@ -2,7 +2,7 @@
 <manifest>
     <include name="default.xml"/>
 
-    <project remote="marvell-prv" revision="krogoth" name="meta-marvell-prv" path="sources/meta-marvell-prv"/>
-    <project remote="marvell-prv" revision="master" name="meta-marvell-rt-prv" path="sources/meta-marvell-rt-prv"/>
-    <project remote="marvell-prv" revision="master" name="meta-marvell-musdk-prv" path="sources/meta-marvell-musdk-prv"/>
+    <project remote="marvell-prv" revision="078b40c7311c658b09699662a0d7dc8e179752fd" name="meta-marvell-prv" path="sources/meta-marvell-prv"/>
+    <project remote="marvell-prv" revision="29ab748325f5031270f3411e84488de3bd1018e8" name="meta-marvell-rt-prv" path="sources/meta-marvell-rt-prv"/>
+    <project remote="marvell-prv" revision="b390e7de75c2250fbc33b43b6bb01ff8cd570bff" name="meta-marvell-musdk-prv" path="sources/meta-marvell-musdk-prv"/>
 </manifest>
