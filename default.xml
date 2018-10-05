@@ -5,7 +5,7 @@
     <remote fetch="http://code.ossystems.com.br" name="ossystems" sync-j="4" review="code.ossystems.com.br"/>
     <remote fetch="https://github.com/MarvellEmbeddedProcessors" name="marvell" sync-j="4"/>
     <remote fetch="ssh://git@github.com/MarvellEmbeddedProcessors" name="marvell-prv" sync-j="4"/>
-    <remote fetch="git://git.yoctoproject.org" name="yocto" sync-j="4" />
+    <remote fetch="https://git.yoctoproject.org" name="yocto" sync-j="4" />
 
     <default revision="invalidRevision"/>
 
@@ -13,16 +13,17 @@
     <project remote="oe" revision="1.30" name="bitbake" path="sources/bitbake"/>
 
     <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded" />
-    <project remote="yocto" revision="krogoth" name="meta-virtualization" path="sources/meta-virtualization" />
+    <project remote="yocto" revision="krogoth" name="meta-mentor" path="sources/cgit/cgit.cgi/meta-mentor" />
+    <project remote="yocto" revision="krogoth" name="meta-virtualization" path="sources/cgit/cgit.cgi/meta-virtualization" />
 
     <project remote="ossystems" revision="krogoth" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
-    <project remote="ossystems" revision="krogoth" name="ossystems-yocto-base-scripts" path="sources/base" >
+    <project remote="ossystems" revision="krogoth" name="ossystems-yocto-base-scripts" path="sources/ossystems-yocto-base-scripts" >
         <copyfile dest="setup-environment" src="setup-environment"/>
     </project>
 
     <project remote="marvell" revision="krogoth" name="meta-marvell-distro" path="sources/meta-marvell-distro"/>
     <project remote="marvell" revision="krogoth" name="meta-marvell" path="sources/meta-marvell"/>
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-config" path="sources/conf/tools"/>
+    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-config" path="sources/marvell-embedded-linux-config"/>
 
-    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/conf/repo"/>
+    <project remote="marvell" revision="krogoth" name="marvell-embedded-linux-platform" path="sources/marvell-embedded-linux-platform"/>
 </manifest>
