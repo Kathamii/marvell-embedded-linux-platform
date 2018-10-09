@@ -13,7 +13,6 @@
     <project remote="oe" revision="1.30" name="bitbake" path="sources/bitbake"/>
 
     <project remote="oe" revision="krogoth" name="meta-openembedded" path="sources/meta-openembedded" />
-    <project remote="yocto" revision="krogoth" name="meta-mentor" path="sources/meta-mentor" />
     <project remote="yocto" revision="krogoth" name="meta-virtualization" path="sources/meta-virtualization" />
 
     <project remote="ossystems" revision="krogoth" name="meta-ossystems-base" path="sources/meta-ossystems-base" />
